@@ -6,39 +6,43 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<center>
 
 	<header>
-		<h1>Tetería Té como Señora</h1>
+		<h1>Tetería <br> Té como Señora</h1>
 	</header>
 	<section id="formulario">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 				<!--_____Formulario______-->
-				
+
 		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text" id"name">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text" id="surname">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
-			<label for="Dirección">Dirección: </label>
-			<input type="text" id="adress">
-			<label for="Teléfono">Teléfono:</label>
-			<input type="text" id="phone">
+			<label for="Nombre Dueño"> Nombre:</label><br>
+			<input type="text" required><p>
+			<label for="Nombre mascota"> Apellido:</label><br>
+			<input type="text" id="surname"><p>
+			<label for="Email"> Correo Electrónico:</label><br>
+			<input type="email" required><p>
+			<label for="Dirección">Dirección:</label><br>
+			<input type="text" id="adress" required><p>
+			<label for="Teléfono">Teléfono:</label><br>
+			<input type="text" id="phone" required><p>
 
 			<!--________Selecciona un pack_______-->
 
 			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
+			<center><select name="" id="" required>
 				<option value="">Escoje tu opción</option>
 				<option value="">Pack de té clásico (Té negro)</option>
 				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
 				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
+			</select></center><br>
 			<label for=""></label>
 			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+
+			<!-- _________-BOTON ENVIAR__________-->
+			<center><button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button></center>
 		</form>
 	</section>
 	<section id="clientes">
@@ -48,5 +52,6 @@
 		<!-- Acá puedes crear lo que quieras-->
 	</section>
 	<script src="js/main.js"></script>
+	</center>
 </body>
 </html>
