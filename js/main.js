@@ -16,6 +16,26 @@ function Datos(nombre,apellido,correo,direccion,telefono){
 	this.telefono = telefono;
 
 };
+//validar formulario
+/*function validar(){
+	nombre =document.getElementById("name").value;
+	console.log(nombre);
+	apellido =document.getElementById("surname").value;
+	correo =document.getElementById("correito").value;
+	direccion =document.getElementById("adress").value;
+	telefono =document.getElementById("phone").value;
+
+ if (document.form.nombre.value.length == 0){
+          alert("Debe ingresar su Nombre");
+        
+        } else {
+            nombre = document.getElementById("nombre").value;
+        }   
+
+};*/
+
+
+
 
 function mostrarData(){
 	nombre =document.getElementById("name").value;

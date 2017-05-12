@@ -17,7 +17,7 @@
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 				<!--_____Formulario______-->
 
-		<form action="">
+		<form action="" onsubmit="return validar();">
 			<label for="Nombre Dueño"> Nombre:</label><br>
 			<input type="text" id="name"required><p>
 			<label for="Nombre mascota"> Apellido:</label><br>
@@ -32,7 +32,7 @@
 			<!--________Selecciona un pack_______-->
 
 			<label for="">Selecciona un pack:</label>
-			<center><select name="" id="" required>
+			<center><select name="" id="pack" required>
 				<option value="">Escoje tu opción</option>
 				<option value="">Pack de té clásico (Té negro)</option>
 				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
