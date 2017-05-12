@@ -1,1 +1,22 @@
 /* Escribe acá tus estilos*/
+body {
+    background-color: 	#FFC0CB;
+}
+form{
+	font-family: tahoma;
+	color: #990066;
+}
+p{
+	font-family: Trebuchet MS;
+}
+h1{
+	font-family: 'Pacifico', cursive;
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Fredericka the Great', cursive;
+	color: #990066;
+}
+section{
+
+	font-family: tahoma;
+	color: #990066;
+}

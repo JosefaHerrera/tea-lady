@@ -4,26 +4,27 @@
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
 	<link rel="stylesheet" href="css/main.css">
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Great+Vibes|Pacifico" rel="stylesheet">
 <body>
 <center>
 
 	<header>
-		<h1>Tetería <br> Té como Señora</h1>
+		<h1>Tetería<br>Té como Señora</h1>
 	</header>
+	<img src="https://images.vexels.com/media/users/3/134843/isolated/preview/a3dc85c79a9c1267881767f6a50c04be-teapot-tea-coffee-by-vexels.png" width="250">
 	<section id="formulario">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 				<!--_____Formulario______-->
 
-		<form action="" onsubmit="return validar();">
+		<form name="myForm" action="" onsubmit="return validateForm();">
 			<label for="Nombre Dueño"> Nombre:</label><br>
-			<input type="text" id="name"required><p>
+			<input type="text" id="name" required><p>
 			<label for="Nombre mascota"> Apellido:</label><br>
 			<input type="text" id="surname"><p>
 			<label for="Email"> Correo Electrónico:</label><br>
-			<input type="email" id="correito"required><p>
+			<input type="email" id="correito" required><p>
 			<label for="Dirección">Dirección:</label><br>
 			<input type="text" id="adress" required><p>
 			<label for="Teléfono">Teléfono:</label><br>
@@ -34,9 +35,9 @@
 			<label for="">Selecciona un pack:</label>
 			<center><select name="" id="pack" required>
 				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
+				<option value="Pack de té clásico (Té negro)">Pack de té clásico (Té negro)</option>
+				<option value="Pack frutales (Hierbas y té con aromatizado con fruta)">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="Pack variedades (Té verde, rojo y blanco)">Pack variedades (Té verde, rojo y blanco)</option>
 			</select></center><br>
 			<label for=""></label>
 			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos

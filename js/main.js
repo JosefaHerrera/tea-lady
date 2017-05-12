@@ -8,44 +8,29 @@
 }
 */
 //objeto Constructor
-function Datos(nombre,apellido,correo,direccion,telefono){
+/*function Datos(nombre,apellido,correo,direccion,telefono){
 	this.nombre = nombre;
 	this.apellido = apellido;
 	this.correo = correo;
 	this.direccion = direccion;
-	this.telefono = telefono;
-
-};
-//validar formulario
-/*function validar(){
-	nombre =document.getElementById("name").value;
-	console.log(nombre);
-	apellido =document.getElementById("surname").value;
-	correo =document.getElementById("correito").value;
-	direccion =document.getElementById("adress").value;
-	telefono =document.getElementById("phone").value;
-
- if (document.form.nombre.value.length == 0){
-          alert("Debe ingresar su Nombre");
-        
-        } else {
-            nombre = document.getElementById("nombre").value;
-        }   
-
-};*/
-
-
+	this.telefono = telefono;*/
 
 
 function mostrarData(){
-	nombre =document.getElementById("name").value;
+	var nombre =document.getElementById("name").value;
 	console.log(nombre);
-	apellido =document.getElementById("surname").value;
-	correo =document.getElementById("correito").value;
-	direccion =document.getElementById("adress").value;
-	telefono =document.getElementById("phone").value;
+	var apellido =document.getElementById("surname").value;
+	var correo =document.getElementById("correito").value;
+	var direccion =document.getElementById("adress").value;
+	var telefono =document.getElementById("phone").value;
 	var clientes =document.getElementById("clientes");
-	var pack= document.getElementById("pack");
-    clientes.innerHTML +=( "<br> Nombre: " + nombre.toUpperCase()+ "<br> Apellido: " + apellido.toUpperCase()+ 
-    	"<br> Correo: " + correo.toUpperCase() + "<br> Direccion: "+ direccion.toUpperCase() + "<br> Telefono: " + telefono.toUpperCase());
+	var pack= document.getElementById("pack").value;
+
+	if(nombre=="" || apellido=="" || correo=="" || direccion=="" || telefono=="" || pack==""){
+		alert("Debe ingresar datos");
+	}else{
+	//var uno =document.getElementById("boton1").value;
+    clientes.innerHTML +=(" ♥ "+"<br> NOMBRE: " + nombre.toUpperCase()+ "<br> APELLIDO: " + apellido.toUpperCase()+ 
+    "<br> CORREO: " + correo.toUpperCase() + "<br> DIRECCIÓN: "+ direccion.toUpperCase() + "<br> TELÉFONO: " + telefono.toUpperCase()) + "<br> ♥ " + pack.toUpperCase();
+	}
 };
