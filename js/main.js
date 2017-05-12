@@ -27,10 +27,10 @@ function mostrarData(){
 	var pack= document.getElementById("pack").value;
 
 	if(nombre=="" || apellido=="" || correo=="" || direccion=="" || telefono=="" || pack==""){
-		alert("Debe ingresar datos");
+		alert("Corazón de Azúcar debe llenar todos los campos");
 	}else{
 	//var uno =document.getElementById("boton1").value;
-    clientes.innerHTML +=(" ♥ "+"<br> NOMBRE: " + nombre.toUpperCase()+ "<br> APELLIDO: " + apellido.toUpperCase()+ 
-    "<br> CORREO: " + correo.toUpperCase() + "<br> DIRECCIÓN: "+ direccion.toUpperCase() + "<br> TELÉFONO: " + telefono.toUpperCase()) + "<br> ♥ " + pack.toUpperCase();
+    clientes.innerHTML +=(" ♥ "+"<br> *NOMBRE: " + nombre.toUpperCase()+ "<br> *APELLIDO: " + apellido.toUpperCase()+ 
+    "<br> *CORREO: " + correo.toUpperCase() + "<br> *DIRECCIÓN: "+ direccion.toUpperCase() + "<br> *TELÉFONO: " + telefono.toUpperCase()) + "<br> ♥ " + pack.toUpperCase();
 	}
 };
