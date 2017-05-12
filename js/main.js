@@ -7,7 +7,7 @@
         }   
 }
 */
-//objeto Constructo
+//objeto Constructor
 function Datos(nombre,apellido,correo,direccion,telefono){
 	this.nombre = nombre;
 	this.apellido = apellido;
@@ -17,14 +17,15 @@ function Datos(nombre,apellido,correo,direccion,telefono){
 
 };
 
-function mostrarData(usuario){
-	var nombre =document.getElementById("name").value;
+function mostrarData(){
+	nombre =document.getElementById("name").value;
 	console.log(nombre);
-	var apellido =document.getElementById("surname").value;
-	var correo =document.getElementById("correito").value;
-	var direccion =document.getElementById("adress").value;
-	var telefono =document.getElementById("phone").value;
-	var boton =document.getElementById("boton").value;
+	apellido =document.getElementById("surname").value;
+	correo =document.getElementById("correito").value;
+	direccion =document.getElementById("adress").value;
+	telefono =document.getElementById("phone").value;
 	var clientes =document.getElementById("clientes");
-    clientes.innerHTML += "Nombre: " + nombre.toUpperCase();
+	var pack= document.getElementById("pack");
+    clientes.innerHTML +=( "<br> Nombre: " + nombre.toUpperCase()+ "<br> Apellido: " + apellido.toUpperCase()+ 
+    	"<br> Correo: " + correo.toUpperCase() + "<br> Direccion: "+ direccion.toUpperCase() + "<br> Telefono: " + telefono.toUpperCase());
 };
