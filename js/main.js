@@ -17,11 +17,14 @@ function Datos(nombre,apellido,correo,direccion,telefono){
 
 };
 
-function mostrarData(){
-	var nombre =document. getElementById("name");
-	var apellido =document. getElementById("surname");
-	var correo =document. getElementById("correito");
-	var direccion =document. getElementById("adress");
-	var telefono =document. getElementById("phone");
-
+function mostrarData(usuario){
+	var nombre =document.getElementById("name").value;
+	console.log(nombre);
+	var apellido =document.getElementById("surname").value;
+	var correo =document.getElementById("correito").value;
+	var direccion =document.getElementById("adress").value;
+	var telefono =document.getElementById("phone").value;
+	var boton =document.getElementById("boton").value;
+	var clientes =document.getElementById("clientes");
+    clientes.innerHTML += "Nombre: " + nombre.toUpperCase();
 };
